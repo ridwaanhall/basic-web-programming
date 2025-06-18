@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Portfolio - Digital Solutions</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>DevPortfolio</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Creating Digital <span class="highlight">Solutions</span></h1>
+                <p class="hero-description">
+                    Passionate web developer specializing in modern, responsive websites 
+                    and innovative digital experiences that bring ideas to life.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-animation" id="code-animation">
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating intuitive and visually appealing user interfaces that enhance user experience and engagement.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Frontend Development</h3>
+                        <p>Building responsive and interactive websites using modern HTML, CSS, and JavaScript technologies.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring your website looks perfect and functions flawlessly across all devices and screen sizes.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Performance Optimization</h3>
+                        <p>Optimizing websites for speed and performance to provide the best user experience possible.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="portfolio-slider" id="portfolio-slider">
+                    <article class="portfolio-item active">
+                        <div class="portfolio-image">
+                            <div class="project-placeholder">🌐</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Modern online shopping experience with responsive design and interactive features.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <div class="project-placeholder">📊</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Data Dashboard</h3>
+                            <p>Interactive dashboard for data visualization with dynamic charts and real-time updates.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">Flexbox</span>
+                                <span class="tag">Charts.js</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <div class="project-placeholder">🎮</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Interactive Game</h3>
+                            <p>Browser-based game with smooth animations and engaging user interactions.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Canvas</span>
+                                <span class="tag">Animation</span>
+                                <span class="tag">DOM</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="prev-btn">‹</button>
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="slider-btn next" id="next-btn">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About the Journey</h2>
+                <article class="about-content">
+                    <div class="about-text">
+                        <h3>Crafting Digital Experiences</h3>
+                        <p>
+                            With a passion for clean code and beautiful design, I specialize in creating 
+                            websites that not only look great but also provide exceptional user experiences. 
+                            My journey in web development started with curiosity and has grown into a 
+                            commitment to excellence.
+                        </p>
+                        <p>
+                            I believe in the power of semantic HTML, the elegance of modern CSS, and the 
+                            magic of JavaScript to create interactive and engaging web applications. 
+                            Every project is an opportunity to learn, grow, and push the boundaries of 
+                            what's possible on the web.
+                        </p>
+                        <div class="skills">
+                            <h4>Core Technologies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Flexbox</span>
+                                <span class="skill-tag">CSS Grid</span>
+                                <span class="skill-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Work Together</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <span class="contact-icon">📧</span>
+                                <span>hello@devportfolio.com</span>
+                            </div>
+                            <div class="contact-method">
+                                <span class="contact-icon">💼</span>
+                                <span>linkedin.com/in/webdeveloper</span>
+                            </div>
+                            <div class="contact-method">
+                                <span class="contact-icon">🐙</span>
+                                <span>github.com/webdeveloper</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="images/profile.svg" alt="Web Developer Profile" id="profile-img">
+            </div>
+            <h3>Alex Johnson</h3>
+            <p class="profile-title">Frontend Developer</p>
+            <p class="profile-bio">
+                Passionate about creating beautiful, functional websites that make a difference. 
+                Always learning, always growing.
+            </p>
+            <div class="social-links">
+                <a href="#" class="social-link">🔗</a>
+                <a href="#" class="social-link">📘</a>
+                <a href="#" class="social-link">📸</a>
+                <a href="#" class="social-link">🐦</a>
+            </div>
+        </div>
+        
+        <div class="quick-stats">
+            <h4>Quick Stats</h4>
+            <div class="stat-item">
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="99">0</span>
+                <span class="stat-label">Client Satisfaction</span>
+            </div>
+        </div>
+
+        <div class="latest-posts">
+            <h4>Latest Insights</h4>
+            <article class="post-item">
+                <h5>The Future of Web Development</h5>
+                <p>Exploring emerging trends and technologies...</p>
+                <small>June 15, 2025</small>
+            </article>
+            <article class="post-item">
+                <h5>Mastering CSS Flexbox</h5>
+                <p>A comprehensive guide to flexible layouts...</p>
+                <small>June 10, 2025</small>
+            </article>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>DevPortfolio</h4>
+                    <p>Creating digital solutions that inspire and engage. Built with passion and attention to detail.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript ES6+</li>
+                        <li>Responsive Design</li>
+                        <li>Modern Layouts</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevPortfolio. Crafted with ❤️ using semantic HTML, modern CSS, and interactive JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
